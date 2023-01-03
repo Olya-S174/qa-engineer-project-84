@@ -1,0 +1,25 @@
+---
+- summary: |
+    Не  активны хештеги в карточках товара
+  environment: |
+    Microsoft Edge Версия 108.0.1462.54 (Официальная сборка) (64-разрядная версия)
+    ОС Windows
+  steps-to-reproduce: |
+    1. Зайти на страницу товара https://hexlet-products-store.vercel.app/products/56
+    2. Нажать на хештег
+  expected-result: |
+    Нам откроется страница с подборкой подобных товаров
+  actual-result: |
+    На странице ничего не происходит
+    
+ - summary: |
+    Неадекватное отображение товаров и инфомации в мобильной версии магазина
+  environment: |
+    Safari
+    ОС iOS 15
+  steps-to-reproduce: |
+    Зайти на страницу мвгазина
+  expected-result: |
+    На странице удобный интерфейс
+  actual-result: |
+    На странице плывёт вёрстка
