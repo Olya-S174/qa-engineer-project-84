@@ -25,3 +25,28 @@
   actual-result: |
     Фото не увеличивается
 
+- summary: |
+    Фото товара отображается не корректно
+  environment: |
+    Microsoft Edge Версия 108.0.1462.54 (Официальная сборка) (64-разрядная версия)
+    ОС Windows
+  steps-to-reproduce: |
+    1. Открываем страницу https://hexlet-products-store.vercel.app/
+    2. Воспользуемся поиском по ключевому слову, вводим Handcraft Chinese style
+  expected-result: |
+    Видим карточку товара с надлежащим фото
+  actual-result: |
+    Фото товара расплывчатое
+    
+- summary: |
+    Нет редиректа при тапе на кнопку Previous
+  environment: |
+    Microsoft Edge Версия 108.0.1462.54 (Официальная сборка) (64-разрядная версия)
+    ОС Windows
+  steps-to-reproduce: |
+    1. Открываем сайт на главной странице
+    2. Нажимаем на кнопку Previous 
+  expected-result: |
+    Кнопка возвращает на предыдущую страницу, но в данном случае она не нужна совсем
+  actual-result: |
+    Кнопка не работает
